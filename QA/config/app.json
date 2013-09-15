@@ -1,0 +1,4 @@
+{
+    "routePattern": "/controller/action/id",
+    "serverPort": 500
+}
