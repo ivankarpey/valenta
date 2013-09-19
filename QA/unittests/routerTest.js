@@ -1,5 +1,5 @@
 ﻿var TestManager = require('./../framework/core');
-var Router = require('./../../src/routing');
+var Router = require('./../../src/core/routing');
 
 var cheker = new TestManager();
 var router = new Router();

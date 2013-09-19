@@ -1,4 +1,5 @@
 {
     "routePattern": "/controller/action/id",
-    "serverPort": 500
+    "serverPort": 500,
+    "controllerFolderPath": "./controllers/"
 }

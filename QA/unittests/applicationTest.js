@@ -1,5 +1,5 @@
 var TestManager = require('./../framework/core');
-var Application = require('./../../src/application');
+var Application = require('./../../src/core/application');
 
 var checker = new TestManager();
 var app = new Application();
