@@ -14,9 +14,7 @@ ControllerManager.prototype = {
 
     getActionMetadata:function(){
         ErorrInvoker.raiseNotImplementedException();
-    },
-
-
+    }
 };
 
 module.exports = ControllerManager;
