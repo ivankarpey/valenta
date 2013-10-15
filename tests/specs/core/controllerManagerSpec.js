@@ -1,4 +1,4 @@
-var ControllerManager = require('./../../src/core/controllerManager');
+var ControllerManager = require('./../../../src/core/controllerManager');
 
 describe("ControllerManager initalization", function(){
     var manager = new ControllerManager({controllerFolderPath: "./../../tests/app/controllers/"});

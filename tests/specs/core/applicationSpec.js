@@ -1,4 +1,4 @@
-var Application = require('./../../src/core/application');
+var Application = require('./../../../src/core/application');
 
 
 describe("Base application tests", function(){

@@ -1,26 +1,30 @@
 var ErrorInvoker = require('./errors');
-var __ = require('./../infrastructure/jsUtilHelper');
+var CodeLoader = require('./../infrastructure/codeLoader');
+var _ = require('./../infrastructure/jsUtilHelper');
 
 var ActionMetadata = function(){
 
 }
 
 
-var ControllerMetadata = function(controllerFullPath) {
+var ControllerMetadata = function(ctrl) {
 
-    this.path = controllerFullPath;
-    this.actionsData = this.readControllerActionsData();
-    this.filters = this.readFiltersList();
+    this.controller = ctrl;
+
+    //this.readControllerMetadata();
+    //this.actionsData = this.readControllerActionsData();
+
 
 };
 
 ControllerMetadata.prototype = {
 
     readControllerActionsData: function(){
-        ErrorInvoker.raiseNotImplementedException();
+        ErrorInvoker.raiseNotImplementedException('readControllerActionsData');
     },
-    readFiltersList: function(){
-        ErrorInvoker.raiseNotImplementedException();
+
+    readControllerMetadata: function(){
+
     }
 
 };
@@ -30,6 +34,7 @@ var ControllerManager = function(settings){
     this.settings = settings;
     this.controllers = {};
     this.controllersMetadata = {};
+    this.loader = new CodeLoader(this.settings);
 
 };
 
@@ -37,24 +42,25 @@ ControllerManager.prototype = {
 
     readControllerFromFile: function (name) {
 
-        var controllerFullPath = this.settings["controllerFolderPath"] + name;
-        this.controllers[name] = require(controllerFullPath);
-        this.controllersMetadata[name] = new ControllerMetadata(controllerFullPath);
+        this.controllers[name] = this.loader.loadController(name);
+        this.controllersMetadata[name] = new ControllerMetadata(this.controllers[name]);
 
     },
 
     getControllerInstance: function(name){
 
-        if (! __.hasKey(this.controllers, name)){
+        if (! (name in this.controllers)){
             this.readControllerFromFile(name);
         }
-        return new (this.controllers[name])();
+
+        var constructor = this.controllers[name];
+        return new constructor();
 
     },
 
     getControllerMetadata: function(name){
 
-        if(! __.hasKey(this.controllersMetadata, name)){
+        if(! name in this.controllersMetadata){
             ErrorInvoker.raiseNoMethadataForController();
         }
         return this.controllersMetadata[name];
@@ -64,11 +70,10 @@ ControllerManager.prototype = {
     getActionMetadata:function(controller, name){
 
         var controllerMetadata = this.getControllerMetadata(controller);
-        if(! __.hasKey(controllerMetadata.actionsData, name)){
+        if(! name in controllerMetadata.actionsData){
             ErrorInvoker.raiseNoMethadataForAction(name);
         }
         return controllerMetadata[name];
-
     }
 
 };

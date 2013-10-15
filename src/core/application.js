@@ -35,7 +35,7 @@ Application.prototype = {
         }catch(err) {
 
             this.logger.logError(err);
-            return;
+            throw err;
 
         };
     },
