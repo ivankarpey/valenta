@@ -23,37 +23,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="applicationSpec.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/specs/core/applicationSpec.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="61" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/application.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="4" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="1054">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="controllerManager.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/controllerManager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="34" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0" vertical-offset="1194" max-vertical-offset="1462">
+            <state line="60" column="4" selection-start="1261" selection-end="1261" vertical-scroll-proportion="0.0" vertical-offset="788" max-vertical-offset="1462">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="errors.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/errors.js">
+      <file leaf-file-name="test.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="59" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="289">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
               <folding />
             </state>
           </provider>
@@ -68,19 +50,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="codeLoader.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="codeLoader.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/infrastructure/codeLoader.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="30" selection-start="321" selection-end="321" vertical-scroll-proportion="0.7589286" vertical-offset="0" max-vertical-offset="646">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/app/config/app.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="1" selection-start="116" selection-end="116" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="170">
+            <state line="15" column="30" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0" vertical-offset="310" max-vertical-offset="646">
               <folding />
             </state>
           </provider>
@@ -89,9 +62,27 @@
       <file leaf-file-name="codeLoaderSpec.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/specs/infrastructure/codeLoaderSpec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="20" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+            <state line="12" column="3" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jsUtilHelper.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/infrastructure/jsUtilHelper.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="31" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lodash.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libs/lodash/dist/lodash.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="591" column="13" selection-start="19237" selection-end="19237" vertical-scroll-proportion="0.0" vertical-offset="9823" max-vertical-offset="108222">
               <folding>
-                <marker date="1381852848431" expanded="true" signature="104:451" placeholder="{...}" />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,16 +91,16 @@
       <file leaf-file-name="controllerManagerSpec.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/specs/core/controllerManagerSpec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="36" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+            <state line="27" column="35" selection-start="1105" selection-end="1105" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="logger.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/infrastructure/logger.js">
+      <file leaf-file-name="customMatchersSpec.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/specs/customMatchersSpec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+            <state line="12" column="38" selection-start="422" selection-end="422" vertical-scroll-proportion="0.60714287" vertical-offset="0" max-vertical-offset="391">
               <folding />
             </state>
           </provider>
@@ -125,12 +116,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/node_modules/jasmine-node/lib/jasmine-node/cli.js" />
-        <option value="$PROJECT_DIR$/node_modules/jasmine-node/lib/jasmine-node/index.js" />
-        <option value="$PROJECT_DIR$/node_modules/jasmine-node/lib/jasmine-node/reporter.js" />
-        <option value="$PROJECT_DIR$/tests/specs/routerSpec.js" />
         <option value="$PROJECT_DIR$/src/controllerManager.js" />
-        <option value="$PROJECT_DIR$/src/infrastructure/jsUtilHelper.js" />
         <option value="$PROJECT_DIR$/src/core/application.js" />
         <option value="$PROJECT_DIR$/tests/specs/applicationSpec.js" />
         <option value="$PROJECT_DIR$/tests/specs/controllerManagerSpec.js" />
@@ -141,6 +127,11 @@
         <option value="$PROJECT_DIR$/tests/app/controllers/testController.js" />
         <option value="$PROJECT_DIR$/src/core/controllerManager.js" />
         <option value="$PROJECT_DIR$/src/infrastructure/codeLoader.js" />
+        <option value="$PROJECT_DIR$/src/core/test.js" />
+        <option value="$PROJECT_DIR$/tests/specs/customMatcherSpec.js" />
+        <option value="$PROJECT_DIR$/tests/specs/core/controllerManagerSpec.js" />
+        <option value="$PROJECT_DIR$/src/infrastructure/jsUtilHelper.js" />
+        <option value="$PROJECT_DIR$/tests/specs/customMatchersSpec.js" />
       </list>
     </option>
   </component>
@@ -244,6 +235,24 @@
               <option name="myItemId" value="specs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Centaurea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="centaurea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="specs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="infrastructure" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -266,26 +275,8 @@
               <option name="myItemId" value="specs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Centaurea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="centaurea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -304,6 +295,70 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Centaurea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="centaurea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Centaurea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="centaurea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infrastructure" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Centaurea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="centaurea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lodash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Centaurea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="centaurea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -417,11 +472,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.46879333" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.46879333" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6033287" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24700071" sideWeight="0.53120667" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39808482" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -432,7 +488,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6033287" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -503,35 +558,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/jasmine-node/lib/jasmine-node/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="81" selection-start="4076" selection-end="4076" vertical-scroll-proportion="0.0" vertical-offset="1878" max-vertical-offset="3349" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/jasmine-node/lib/jasmine-node/reporter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="44" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0" vertical-offset="437" max-vertical-offset="4981" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="344" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/specs/core/routerSpec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="34" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/infrastructure/jsUtilHelper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="46" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="695">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/routing.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
@@ -574,29 +600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/specs/infrastructure/codeLoaderSpec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="20" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-          <folding>
-            <marker date="1381852848431" expanded="true" signature="104:451" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/specs/core/controllerManagerSpec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="36" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/controllerManager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="34" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0" vertical-offset="1194" max-vertical-offset="1462">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/app/controllers/testController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="4" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
@@ -606,7 +609,67 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/infrastructure/codeLoader.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="30" selection-start="321" selection-end="321" vertical-scroll-proportion="0.7589286" vertical-offset="0" max-vertical-offset="646">
+        <state line="15" column="30" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0" vertical-offset="310" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/controllerManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="4" selection-start="1261" selection-end="1261" vertical-scroll-proportion="0.0" vertical-offset="788" max-vertical-offset="1462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/lodash/dist/lodash.compat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="114359">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/lodash/dist/lodash.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="591" column="13" selection-start="19237" selection-end="19237" vertical-scroll-proportion="0.0" vertical-offset="9823" max-vertical-offset="108222">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/specs/infrastructure/codeLoaderSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="3" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/specs/core/controllerManagerSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="35" selection-start="1105" selection-end="1105" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/infrastructure/jsUtilHelper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="31" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/specs/customMatchersSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="38" selection-start="422" selection-end="422" vertical-scroll-proportion="0.60714287" vertical-offset="0" max-vertical-offset="391">
           <folding />
         </state>
       </provider>
