@@ -1,8 +1,11 @@
+
+require('jasmine-node');
 var ControllerManager = require('./../../../src/core/controllerManager');
 
 describe("ControllerManager", function(){
-    var manager = new ControllerManager({controllerFolderPath: "./../../tests/app/controllers/"});
-    var ctrlName = "testController";
+    var ctrlName = "testController", manager;
+
+    beforeEach(function(){ manager = new ControllerManager({controllerFolderPath: "./../../tests/app/controllers/"}); });
 
     it("should init controller instance when calling first time", function(){
         var ctrl = manager.getControllerInstance(ctrlName);

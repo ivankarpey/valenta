@@ -2,32 +2,56 @@ var ErrorInvoker = require('./errors');
 var CodeLoader = require('./../infrastructure/codeLoader');
 var _ = require('./../infrastructure/jsUtilHelper');
 
-var ActionMetadata = function(){
+var ControllerMetadata = (function(){
 
-}
+    function readSignature(func){
+
+        var STRIP_COMMENTS = /((\/\/.*$)|(\/\*[\s\S]*?\*\/))/mg
+        var fnStr = func.toString().replace(STRIP_COMMENTS, '');
+        var result = fnStr.slice(fnStr.indexOf('(')+1, fnStr.indexOf(')')).match(/([^\s,]+)/g)
+        if(result === null)
+            result = []
+        return result
+
+    };
+
+    var ActionMetadata = function(func){
+        this.name = func.name;
+        this.args = readSignature(func);
+        this.attr = func.meta;
+    };
+
+    function ControllerMetadata(ctrl, name) {
+
+        this.controller = ctrl;
+        this.readControllerMetadata(name);
+        this.readControllerActionsData()
+
+    };
 
 
-var ControllerMetadata = function(ctrl) {
+    ControllerMetadata.prototype = {
 
-    this.controller = ctrl;
+        readControllerActionsData: function(){
+            this.actionsData = {};
+            var proto = this.controller.prototype;
+            for(var method in proto){
+                if(proto.hasOwnProperty(method)){
+                    this.actionsData[method.name] = new ActionMetadata(method);
+                }
+            }
+        },
 
-    //this.readControllerMetadata();
-    //this.actionsData = this.readControllerActionsData();
+        readControllerMetadata: function(name){
+            this.name = name;
+            this.args = readSignature(this.controller);
+            this.attr = this.controller.meta;
+        }
+    };
 
+    return ControllerMetadata;
+})();
 
-};
-
-ControllerMetadata.prototype = {
-
-    readControllerActionsData: function(){
-        ErrorInvoker.raiseNotImplementedException('readControllerActionsData');
-    },
-
-    readControllerMetadata: function(){
-
-    }
-
-};
 
 var ControllerManager = function(settings){
 
@@ -43,7 +67,7 @@ ControllerManager.prototype = {
     readControllerFromFile: function (name) {
 
         this.controllers[name] = this.loader.loadController(name);
-        this.controllersMetadata[name] = new ControllerMetadata(this.controllers[name]);
+        this.controllersMetadata[name] = new ControllerMetadata(this.controllers[name], name);
 
     },
 
@@ -60,8 +84,8 @@ ControllerManager.prototype = {
 
     getControllerMetadata: function(name){
 
-        if(! name in this.controllersMetadata){
-            ErrorInvoker.raiseNoMethadataForController();
+        if(!(name in this.controllersMetadata)){
+            this.readControllerFromFile(name);
         }
         return this.controllersMetadata[name];
 
@@ -70,8 +94,8 @@ ControllerManager.prototype = {
     getActionMetadata:function(controller, name){
 
         var controllerMetadata = this.getControllerMetadata(controller);
-        if(! name in controllerMetadata.actionsData){
-            ErrorInvoker.raiseNoMethadataForAction(name);
+        if(! (name in controllerMetadata.actionsData)){
+            ErrorInvoker.raiseNoMetadataForAction(name);
         }
         return controllerMetadata[name];
     }
