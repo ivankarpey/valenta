@@ -2,7 +2,7 @@ var TestController = function (){
 }.meta({attr:['Auth']});
 
 TestController.prototype = {
-    index: function(){
+    index: function(msg){
         return "I am index";
     }.meta({attr:['POST']})
 }
