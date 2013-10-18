@@ -1,7 +1,7 @@
 var ErrorInvoker = function(){
 };
 
-ErrorInvoker.raiseNotImplementedException = function(name){
+ErrorInvoker.raiseNotImplementedError = function(name){
     throw new Error("Function " + name + " not implemented.");
 };
 

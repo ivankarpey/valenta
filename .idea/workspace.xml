@@ -35,7 +35,7 @@
       <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="0" selection-start="898" selection-end="898" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1054">
+            <state line="0" column="56" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1054">
               <folding />
             </state>
           </provider>
@@ -57,52 +57,61 @@
       <file leaf-file-name="routing.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/routing.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="634" selection-end="634" vertical-scroll-proportion="0.0" vertical-offset="265" max-vertical-offset="1020">
+            <state line="21" column="0" selection-start="634" selection-end="634" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testController.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/app/controllers/testController.js">
+      <file leaf-file-name="errors.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/errors.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="23" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+            <state line="3" column="33" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controllerFactorySpec.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="controllerFactorySpec.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/specs/core/controllerFactorySpec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="45" selection-start="358" selection-end="358" vertical-scroll-proportion="0.22700296" vertical-offset="0" max-vertical-offset="969">
+            <state line="9" column="45" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cli.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/jasmine-node/lib/jasmine-node/cli.js">
+      <file leaf-file-name="executionFlowSpec.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/specs/core/executionFlowSpec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="3999" max-vertical-offset="4845">
+            <state line="8" column="0" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jasmine.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libs/jasmine/lib/jasmine-core/jasmine.js">
+      <file leaf-file-name="lodash.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/libs/lodash/dist/lodash.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="44302">
+            <state line="6" column="37" selection-start="290" selection-end="290" vertical-scroll-proportion="0.53968257" vertical-offset="0" max-vertical-offset="108222">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routerSpec.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/specs/core/routerSpec.js">
+      <file leaf-file-name="executionFlow.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/executionFlow.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="570" selection-end="570" vertical-scroll-proportion="0.0" vertical-offset="79" max-vertical-offset="357">
+            <state line="39" column="31" selection-start="521" selection-end="521" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="782">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jsUtilHelper.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/infrastructure/jsUtilHelper.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="16" selection-start="120" selection-end="120" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
               <folding />
             </state>
           </provider>
@@ -118,22 +127,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/tests/specs/applicationSpec.js" />
-        <option value="$PROJECT_DIR$/tests/specs/controllerManagerSpec.js" />
         <option value="$PROJECT_DIR$/src/infrastructure/extensions.js" />
         <option value="$PROJECT_DIR$/src/infrastructure/moduleLoader.js" />
         <option value="$PROJECT_DIR$/tests/specs/infrastructure/codeLoaderSpec.js" />
         <option value="$PROJECT_DIR$/src/infrastructure/codeLoader.js" />
         <option value="$PROJECT_DIR$/src/core/test.js" />
         <option value="$PROJECT_DIR$/tests/specs/customMatcherSpec.js" />
-        <option value="$PROJECT_DIR$/src/infrastructure/jsUtilHelper.js" />
         <option value="$PROJECT_DIR$/tests/specs/customMatchersSpec.js" />
-        <option value="$PROJECT_DIR$/src/core/errors.js" />
         <option value="$PROJECT_DIR$/tests/app/controllers/testController.js" />
         <option value="$PROJECT_DIR$/src/core/controllerManager.js" />
         <option value="$PROJECT_DIR$/tests/specs/core/controllerManagerSpec.js" />
         <option value="$PROJECT_DIR$/src/core/controllerFactory.js" />
         <option value="$PROJECT_DIR$/tests/specs/core/controllerFactorySpec.js" />
+        <option value="$PROJECT_DIR$/src/core/errors.js" />
+        <option value="$PROJECT_DIR$/src/core/executionFlow.js" />
+        <option value="$PROJECT_DIR$/tests/specs/core/executionFlowSpec.js" />
+        <option value="$PROJECT_DIR$/src/infrastructure/jsUtilHelper.js" />
       </list>
     </option>
   </component>
@@ -230,112 +239,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="specs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Centaurea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="centaurea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="specs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="infrastructure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Centaurea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="centaurea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="specs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Centaurea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="centaurea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Centaurea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="centaurea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Centaurea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="centaurea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -350,11 +253,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="libs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="infrastructure" />
+              <option name="myItemId" value="lodash" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -368,11 +271,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="libs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
+              <option name="myItemId" value="lodash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Centaurea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="centaurea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -510,7 +431,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46879333" sideWeight="0.49964714" order="10" side_tool="false" content_ui="tabs" />
@@ -581,41 +502,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/infrastructure/jsUtilHelper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="31" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/specs/customMatchersSpec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="38" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gruntfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="4" selection-start="628" selection-end="668" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/errors.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="41" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/jasmine/lib/jasmine-core/jasmine.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="44302">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.WebStorm7/system/extLibs/nodejs-v0.11.7-src/core-modules-sources/lib/module.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="491" column="0" selection-start="13743" selection-end="13743" vertical-scroll-proportion="0.33333334" vertical-offset="7895" max-vertical-offset="8772">
@@ -633,13 +519,6 @@
     <entry file="file://$PROJECT_DIR$/node_modules/jasmine-node/lib/jasmine-node/cli.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="3999" max-vertical-offset="4845">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/routing.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="634" selection-end="634" vertical-scroll-proportion="0.0" vertical-offset="265" max-vertical-offset="1020">
           <folding />
         </state>
       </provider>
@@ -672,13 +551,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="898" selection-end="898" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1054">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/controllerFactory.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="16" selection-start="1456" selection-end="1456" vertical-scroll-proportion="0.0" vertical-offset="669" max-vertical-offset="1343">
@@ -690,9 +562,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/routing.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="634" selection-end="634" vertical-scroll-proportion="0.0" vertical-offset="265" max-vertical-offset="1020">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/errors.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="33" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/executionFlow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="31" selection-start="521" selection-end="521" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/specs/core/controllerFactorySpec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="45" selection-start="358" selection-end="358" vertical-scroll-proportion="0.22700296" vertical-offset="0" max-vertical-offset="969">
+        <state line="9" column="45" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="56" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1054">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/infrastructure/jsUtilHelper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="16" selection-start="120" selection-end="120" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/specs/core/executionFlowSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/lodash/dist/lodash.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="37" selection-start="290" selection-end="290" vertical-scroll-proportion="0.53968257" vertical-offset="0" max-vertical-offset="108222">
           <folding />
         </state>
       </provider>

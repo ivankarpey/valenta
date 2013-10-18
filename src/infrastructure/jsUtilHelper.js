@@ -1,6 +1,6 @@
 //TODO: Add unittests for JSUtilHelper methods
 
-var lodash = require("./../../libs/lodash/dist/lodash");
+var lodash = require("../../libs/lodash/dist/lodash");
 
 lodash.bindAll()
 var JSUtilHelper = function(){
