@@ -12,7 +12,9 @@ describe("Execution Flow", function(){
         
     });
     
-    describe("with no or single task", function(){
+    describe("execution flow with tasks without arguments", function(){
+    
+        describe("with no or single task", function(){
         
         var flow, func;
         var result;
@@ -38,8 +40,30 @@ describe("Execution Flow", function(){
             expect(result).toEqual("done");
         });
         
+        
     })
     
+        describe("with multiple tasks", function(){
+           
+            it("should execute without error", function(){
+                
+                result = null;
+                flow = new ExecutionFlow(dependancyResolver);
+                func = function(){ result = "done"};
+                flow.append(func);
+                var second = function(){result += "second";}
+                flow.append(second);
+                flow.execute();
+                
+                expect(result).toEqual("donesecond");
+                
+            }) 
+        });
     
+    });
+    
+    describe("flow execution with arguments and with DI by dependancy resolver", function(){
+        
+    });
     
 });

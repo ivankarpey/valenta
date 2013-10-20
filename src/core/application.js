@@ -46,9 +46,10 @@ Application.prototype = {
     },
 
     handleRequest: function(req, resp){
+        
         var uriData = self.router.parseURI(req.path);
         var controller = self.initiateController(uriData);
-
+        
     }
 
 };
