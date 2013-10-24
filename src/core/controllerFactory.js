@@ -28,7 +28,6 @@ var ControllerMetadata = (function(){
 
     };
 
-
     ControllerMetadata.prototype = {
 
         readControllerActionsData: function(){

@@ -1,8 +1,10 @@
 var _ = require("./jsUtilHelper");
 var ErrorInvoker = require("../core/errors");
 
-function ServiceMetaWrap(func){
+function ServiceMetaWrap(func, signature){
     this.func = func;
+    this.args = signature
+    this.meta = func.meta || {};
 };
 
 function DependencyResolverDecorator(resolver){
@@ -43,11 +45,9 @@ DependencyResolverDecorator.prototype = {
         var self = this.resolver
         self.dependencyMap[self.lastKey].singleton = true;
         return this;
-        
     }
 
 }
-
 
 function DependencyResolver(){
     
@@ -85,11 +85,18 @@ DependencyResolver.prototype = {
         if(!service || !(service in this.dependencyMap)){
             throw "Current service couldn't be resolved";
         }
-        
-        return new this.dependencyMap[service];
+
+        var func = this.dependencyMap[service];
+        if(func.args){
+            
+        }
+
+
+        //TODO: Investigate behaviour of functions (constructors, fabricMethods, simple function with call's and apply when invoked with new)
+        return new this.dependencyMap[service].func();
         
     },
-    
+
     _findModule: function(moduleName){
          
          ErrorInvoker.raiseNotImplementedError("find module");
@@ -102,9 +109,19 @@ DependencyResolver.prototype = {
         if(key in this.dependencyMap){
             throw new Error("This service already registered. Use alias.");
         }else{
-            this.dependencyMap[key] = new ServiceMetaWrap(func);
+            this.dependencyMap[key] = new ServiceMetaWrap(func, this._readSignature(func));
         }
-        
+    },
+
+    _readSignature: function(func){
+
+        var STRIP_COMMENTS = /((\/\/.*$)|(\/\*[\s\S]*?\*\/))/mg
+        var fnStr = func.toString().replace(STRIP_COMMENTS, '');
+        var result = fnStr.slice(fnStr.indexOf('(')+1, fnStr.indexOf(')')).match(/([^\s,]+)/g)
+        if(result === null)
+            result = []
+        return result
+
     }
     
 };
