@@ -1,6 +1,8 @@
 var _ = require("./jsUtilHelper");
 var ErrorInvoker = require("../core/errors");
 
+var MAX_DEEP = 200;
+
 function ServiceMetaWrap(func, signature){
     this.func = func;
     this.args = signature
@@ -49,10 +51,13 @@ DependencyResolverDecorator.prototype = {
 
 }
 
+
+
 function DependencyResolver(){
     
     this.dependencyMap = {};
     this.lastKey = null;
+    this.deepIndicator = 0;
     
 };
 
@@ -83,18 +88,26 @@ DependencyResolver.prototype = {
     resolve: function(service){
         
         if(!service || !(service in this.dependencyMap)){
-            throw "Current service couldn't be resolved";
+            throw "service with name: " + service || null +" can't be resolved";
         }
 
-        var func = this.dependencyMap[service];
-        if(func.args){
-            
+        if(this.deepIndicator > MAX_DEEP){
+            throw "Circular reference detected or too much dependencies to resolve";
         }
 
+        this.deepIndicator++;
+        var dependancy = this.dependencyMap[service];
+        var params = [];
 
-        //TODO: Investigate behaviour of functions (constructors, fabricMethods, simple function with call's and apply when invoked with new)
-        return new this.dependencyMap[service].func();
-        
+        if(dependancy.args){
+            var self = this;
+            _.forEach(dependancy.args, function(arg){
+               params.push(self.resolve(arg));
+            });
+        }
+
+        this.deepIndicator--;
+        return self._build(dependancy.func, params);
     },
 
     _findModule: function(moduleName){
@@ -111,6 +124,7 @@ DependencyResolver.prototype = {
         }else{
             this.dependencyMap[key] = new ServiceMetaWrap(func, this._readSignature(func));
         }
+
     },
 
     _readSignature: function(func){
@@ -118,11 +132,21 @@ DependencyResolver.prototype = {
         var STRIP_COMMENTS = /((\/\/.*$)|(\/\*[\s\S]*?\*\/))/mg
         var fnStr = func.toString().replace(STRIP_COMMENTS, '');
         var result = fnStr.slice(fnStr.indexOf('(')+1, fnStr.indexOf(')')).match(/([^\s,]+)/g)
-        if(result === null)
-            result = []
-        return result
+        if(result === null){
+            result = [];
+        }
+        return result;
 
+    },
+
+    _build: function(constructor, args) {
+        function F() {
+            return constructor.apply(this, args);
+        }
+        F.prototype = constructor.prototype;
+        return new F();
     }
+
     
 };
 

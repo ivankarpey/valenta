@@ -79,18 +79,38 @@ describe("Dependancy Resolver", function(){
             expect(result).toBeTruthy();
             expect(result.data).toEqual("I'm resolved object");
         });
-//
-//        it("should throw an exception during resolving constructtor if some args not registered", function(){
-//            expect(null).toBeTruthy();
-//        });
-//
-//        it("should corectly handle scenario when arguments also have arguments (reqursion)", function(){
-//            expect(null).toBeTruthy();
-//        });
-//
-//        it("should throw exception when detecting circular references, which caused infinite reqursion", function(){
-//            expect(null).toBeTruthy();
-//        });
+
+        it("should throw an exception during resolving constructor if some args not registered", function(){
+            var funcParams = function(testFunc4){ this.data = testFunc4.msg };
+            resolver.register(funcParams, "withParams")
+            var func = function(){resolver.resolve("withParams")};
+            expect(func).toThrow();
+        });
+
+        it("should corectly handle scenario when arguments also have arguments (reqursion)", function(){
+            var funcParams = function(func1, func2) {this.data = func1.data + func2.data};
+            var func1 = function(testFunc){ this.data = testFunc.msg };
+            var func2 = function(){this.data = "!!!"};
+
+            resolver.register(funcParams, "withParams");
+            resolver.register(func1, "func1");
+            resolver.register(func2, "func2");
+
+            var result = resolver.resolve("withParams");
+            expect(result).toBeTruthy();
+            expect(result.data).toEqual("I'm resolved object!!!");
+        });
+
+        it("should throw exception when detecting circular references, which caused infinite reqursion", function(){
+            var funcParams = function(func1) {this.data = func1.data};
+            var func1 = function(withParams){ this.data = withParams.data };
+
+            resolver.register(funcParams, "withParams");
+            resolver.register(func1, "func1");
+
+            var func = function(){resolver.resolve("withParams")};
+            expect(func).toThrow();
+        });
 
     });
 });

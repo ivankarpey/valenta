@@ -1,5 +1,3 @@
-
-require('jasmine-node');
 var ControllerFactory = require('./../../../src/core/controllerFactory');
 
 describe("ControllerFactory", function(){
