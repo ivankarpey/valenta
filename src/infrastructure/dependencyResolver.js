@@ -1,5 +1,4 @@
 var _ = require("./jsUtilHelper");
-var ErrorInvoker = require("../core/errors");
 
 var MAX_DEEP = 200;
 
@@ -52,7 +51,6 @@ DependencyResolverDecorator.prototype = {
 }
 
 
-
 function DependencyResolver(){
     
     this.dependencyMap = {};
@@ -69,7 +67,7 @@ DependencyResolver.prototype = {
             throw new Error("No service to register");
         }else{
             if(_.isString(func)){
-                func = this._findModule(func);
+                func = this._readModule(func);
             }
             if(!key && !func.name){
                 throw new Error("Can't register unnamed service, key should be provided");
@@ -110,24 +108,7 @@ DependencyResolver.prototype = {
         return self._build(dependancy.func, params);
     },
 
-    _findModule: function(moduleName){
-         
-         ErrorInvoker.raiseNotImplementedError("find module");
-        
-    },
-    
-    
-    _setFuncSafely: function(func, key){
-        
-        if(key in this.dependencyMap){
-            throw new Error("This service already registered. Use alias.");
-        }else{
-            this.dependencyMap[key] = new ServiceMetaWrap(func, this._readSignature(func));
-        }
-
-    },
-
-    _readSignature: function(func){
+    readSignature: function(func){
 
         var STRIP_COMMENTS = /((\/\/.*$)|(\/\*[\s\S]*?\*\/))/mg
         var fnStr = func.toString().replace(STRIP_COMMENTS, '');
@@ -139,14 +120,30 @@ DependencyResolver.prototype = {
 
     },
 
+    _readModule: function(moduleName){
+
+        return require(moduleName);
+        
+    },
+
+    _setFuncSafely: function(func, key){
+        
+        if(key in this.dependencyMap){
+            throw new Error("This service already registered. Use alias.");
+        }else{
+            this.dependencyMap[key] = new ServiceMetaWrap(func, this.readSignature(func));
+        }
+
+    },
+
     _build: function(constructor, args) {
+
         function F() {
             return constructor.apply(this, args);
         }
         F.prototype = constructor.prototype;
         return new F();
     }
-
     
 };
 

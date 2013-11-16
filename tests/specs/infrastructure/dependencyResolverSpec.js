@@ -50,12 +50,16 @@ describe("Dependancy Resolver", function(){
         });
 
         it("should register function with metadata correctly", function(){
-
             func.meta = {type:'function'};
             resolver.register(func, "testFunc");
             expect(resolver.dependencyMap["testFunc"].func()).toEqual({msg: "I'm resolved object"});
             expect(resolver.dependencyMap["testFunc"].meta["type"]).toEqual("function");
+        });
 
+        it("should register module by path", function(){
+            var modulePath = "../../tests/app/testModule";
+            resolver.register(modulePath, "testModule");
+            expect(resolver.dependencyMap["testModule"].func()).toEqual({msg: "I'm resolved object from module"});
         });
     });
 

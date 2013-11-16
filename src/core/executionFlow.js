@@ -1,58 +1,104 @@
 var _ = require("../infrastructure/jsUtilHelper");
 var er = require("./errors");
 
-function Task(func, order, context){
+function Task(func, order, context, resolver){
     
     this.func = func;
     this.order = order;
     this.context = context;
+    this.resolver = resolver;
     
 };
 
 Task.prototype.invoke = function(){
-    
-    this.func.call();
-    
+    try{
+        var signature = this.resolver.readSignature(this.func);
+        if(_.isEmpty(signature)){
+            this.func.call();
+        }else{
+            var data = [];
+            var self = this;
+
+            _.each(signature, function(elem){
+                data.push(self.resolver.resolve(elem));
+            })
+
+            this.func.apply(null, data);
+        }
+    }
+    catch(e){
+        //TODO:Implement error handling logic according framework policies
+        console.log(e);
+    }
+
 };
 
-function ExecutionFlow(dependancyResolver){
+function FilterTask(func, order, context, resolver){
+
+};
+
+_.inherit(FilterTask, Task);
+
+function ControllerTask(func, order, context, resolver){
+
+}
+
+_.inherit(ControllerTask, Task);
+
+function AttributeTask(func, order, context, resolver){
+
+}
+
+_.inherit(AttributeTask, Task);
+
+function ExecutionFlow(dependencyResolver){
     
-    if(!dependancyResolver){
+    if(!dependencyResolver){
         throw new Error("Injector is required.")
     }
     
-    this.dependancyResolver = dependancyResolver;
+    this.resolver = dependencyResolver;
     this.tasks = [];
     this.size = 0;
+    this.executionContext = {};
     
 };
 
-ExecutionFlow.buildFlow = function(flow, controllerMetadata){
+ExecutionFlow.buildControllerFlow = function(flow, controllerMetadata){
         
 };
 
 ExecutionFlow.prototype = {
 
     append: function(func){
-   
-        var task = new Task(func, ++this.size);
-        this.tasks.push(task);
+        var taskCtor;
+
+        switch(func.type){
+            case "ctrl":
+                taskCtor = ControllerTask;
+                break;
+            case "filter":
+                taskCtor = FilterTask;
+                break;
+            case "attribute":
+                taskCtor = AttributeTask;
+                break;
+            default:
+                taskCtor = Task;
+        }
+
+        this.tasks.push(new taskCtor(func, ++this.size, this.executionContext, this.resolver));
 
     },
     
-    execute: function(){    
+    execute: function(){
 
-        _.each(this.tasks, function(task){
+        _.forEach(this.tasks, function(task){
            task.invoke(); 
         });   
 
-    },
+    }
 
-    executeAsync: function(){
-
-        er.raiseNotImplementedError('executeAsync');
-
-    },
 };
 
 module.exports = ExecutionFlow;
