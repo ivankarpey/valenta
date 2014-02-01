@@ -1,31 +1,41 @@
-﻿var JsUtilHelper = require('./../infrastructure/jsUtilHelper');
+﻿var _ = require('./../infrastructure/jsUtilHelper');
 var Router = require('./routing');
+var ControllerFactory = require("./controllerFactory");
+var ExecutionFlow = require("./executionFlow");
+var DependencyResolver = require("../infrastructure/dependencyResolver");
 var Logger = require('./../infrastructure/logger');
-var http = require('http')
+var http = require('http');
 
 var Application = function(configPath){
 
-    var self = this;
     this.logger = new Logger();
 
-    if(JsUtilHelper.isNullOrUndefined(configPath)){
+    if(_.isNullOrUndefined(configPath)){
         this.initDefault();
     }else{
-        this.initWithConfig(configPath)
+        this.initWithConfig(configPath);
     }
+
+    this.server = http.createServer(this.handleRequest);
+    this.controllerFactory = new ControllerFactory(this.settings);
+    this.dependencyResolver = new DependencyResolver();
+    this._initFilters();
 }
 
 Application.prototype = {
 
-    initDefault: function(){
+    initDefault: function(settings){
+
         this.settings = {
             "serverPort": 5000
         };
         this.router = new Router();
         this.server = http.createServer(this.handleRequest);
+
     },
 
     initWithConfig: function(path){
+
         var fs = require('fs');
 
         try {
@@ -40,22 +50,30 @@ Application.prototype = {
             throw err;
 
         };
-    },
-
-    initiateController: function (uriData) {
-
 
     },
 
-    handleRequest: function(req, resp){
+    handleRequest: function(request, response){
         
-        var uriData = self.router.parseURI(req.path);
-        var controller = self.initiateController(uriData);
+        var uriData = this.router.parseURI(request);
+        var controllerMetadata = this.controllerFactory.getControllerMetadata(uriData.controller);
+        ExecutionFlow.buildControllerFlow(this.dependencyResolver, this.filters,
+            controllerMetadata,request, response, uriData.action).execute();
+        this._sendResponse();
 
     },
 
     run: function(){
         this.server.listen(this.settings.serverPort);
+    },
+
+    _initFilters: function(){
+        this.filters = [];
+    },
+
+    _sendResponse: function(response){
+        response.writeHead(200, {"Content-Type": "text/plain"});
+        response.end(response.result);
     }
 
 };

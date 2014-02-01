@@ -19,12 +19,26 @@ describe("Base application tests", function(){
 
     });
 
-    it("application should successfully run and start listen defined port", function(){
+    it("should successfully run and start listen defined port", function(){
 
         var app = new Application();
         spyOn(app.server, 'listen');
         app.run();
-
         expect(app.server.listen).toHaveBeenCalledWith(app.settings.serverPort);
-    })
+
+    });
+
+    describe("application request handling", function(){
+
+        it("should succesfully handle empty route call", function(){
+
+            var request = {url:"/"};
+            var response = {};
+
+            var app = new Application();
+            app.handleRequest(request, response);
+
+        })
+
+    });
 });

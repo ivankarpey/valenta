@@ -1,3 +1,14 @@
-1) implement 'Application.run' start server and make it listen defined port and handle incoming requests
-2) make simple GET request handled succesfully
-3) allow easily handle static content in predefined sources
+important:
+1) make simple GET request handled succesfully
+2) allow easily handle static content in predefined sources
+
+
+intermediate:
+1) think about request/response objects structure
+
+minor:
+1) make special class for settings and make it readonly
+
+
+lowest possible:
+1) write unittests for utils methods

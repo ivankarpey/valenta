@@ -48,8 +48,7 @@ DependencyResolverDecorator.prototype = {
         return this;
     }
 
-}
-
+};
 
 function DependencyResolver(){
     
@@ -94,18 +93,18 @@ DependencyResolver.prototype = {
         }
 
         this.deepIndicator++;
-        var dependancy = this.dependencyMap[service];
+        var dependency = this.dependencyMap[service];
         var params = [];
 
-        if(dependancy.args){
+        if(dependency.args){
             var self = this;
-            _.forEach(dependancy.args, function(arg){
+            _.forEach(dependency.args, function(arg){
                params.push(self.resolve(arg));
             });
         }
 
         this.deepIndicator--;
-        return self._build(dependancy.func, params);
+        return self._build(dependency.func, params);
     },
 
     readSignature: function(func){
