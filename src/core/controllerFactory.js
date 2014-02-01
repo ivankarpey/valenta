@@ -7,10 +7,11 @@ var ControllerMetadata = (function(){
 
         var STRIP_COMMENTS = /((\/\/.*$)|(\/\*[\s\S]*?\*\/))/mg
         var fnStr = func.toString().replace(STRIP_COMMENTS, '');
-        var result = fnStr.slice(fnStr.indexOf('(')+1, fnStr.indexOf(')')).match(/([^\s,]+)/g)
-        if(result === null)
+        var result = fnStr.slice(fnStr.indexOf('(')+1, fnStr.indexOf(')')).match(/([^\s,]+)/g);
+        if(result === null){
             result = []
-        return result
+        }
+        return result;
 
     };
 
@@ -18,6 +19,7 @@ var ControllerMetadata = (function(){
         this.name = func.name;
         this.args = readSignature(func);
         this.attr = func.meta;
+        this.func = func;
     };
 
     function ControllerMetadata(ctrl, name) {

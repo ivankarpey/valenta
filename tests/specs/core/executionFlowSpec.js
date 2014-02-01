@@ -1,13 +1,13 @@
-ExecutionFlow = require("../../../src/core/executionFlow");
-DependencyResolver = require("../../../src/infrastructure/dependencyResolver")
+var ExecutionFlow = require("../../../src/core/executionFlow");
+var DependencyResolver = require("../../../src/infrastructure/dependencyResolver");
 
 describe("Execution Flow", function(){
     
-    var dependancyResolver = {readSignature: function(){return []}};
+    var dependencyResolver = {readSignature: function(){return []}};
 
     it("should init with new command", function(){
         
-        var flow = new ExecutionFlow(dependancyResolver);
+        var flow = new ExecutionFlow(dependencyResolver);
         expect(flow).toBeTruthy();
         
     });
@@ -20,7 +20,7 @@ describe("Execution Flow", function(){
             var result;
 
             beforeEach(function(){
-                flow = new ExecutionFlow(dependancyResolver);
+                flow = new ExecutionFlow(dependencyResolver);
                 func = function(){
                     result = "done"
                 };
@@ -50,7 +50,7 @@ describe("Execution Flow", function(){
             it("should execute without error", function(){
                 
                 result = null;
-                flow = new ExecutionFlow(dependancyResolver);
+                flow = new ExecutionFlow(dependencyResolver);
                 func = function(){ result = "done"};
                 flow.append(func);
                 var second = function(){result += "second";}
@@ -66,15 +66,16 @@ describe("Execution Flow", function(){
     });
     
     describe("flow execution with arguments and with DI by dependency resolver", function(){
+
         var flow, data;
         function fooCtor (){
             return { msg:"fooObj" };
-        }
+        };
 
         function fooCtorParam(fooCtor){
             this.msg = fooCtor.msg + "Params";
             data = this.msg;
-        }
+        };
 
         beforeEach(function(){
             var resolver = new DependencyResolver();
@@ -89,7 +90,43 @@ describe("Execution Flow", function(){
             flow.execute();
             expect(data).toEqual("fooObjParams");
         });
-        
+
     });
-    
+
+    describe("controller flow build logic", function(){
+
+        var ctrlName = "testController", metadata, req, resp = {};
+
+        beforeEach(function(){
+            metadata = {
+                controller: function(){
+                    return {
+                        index: function(){}
+                    };
+                },
+                actionsData:{index:{attr:null, func: function(){return "action index executed"}}}
+            }}
+        );
+
+        it("should allow to build controller flow from single controller, index action", function(){
+            var ctrlFlow = ExecutionFlow.buildControllerFlow(dependencyResolver, [], metadata, req, resp, "index");
+            ctrlFlow.execute();
+            expect(resp.executionFlowResult[0]).toEqual("action index executed");
+        });
+
+        //TODO:Introduce filter concepts and attributes into framework and test it properly
+//        it("should allow to build controller flow from controller action with attributes", function(){
+//            expect(false).toBeTrue();
+//        });
+//
+//
+//        it("should allow to build controller flow from controller action with attributes, filters", function(){
+//            expect(false).toBeTrue();
+//        });
+
+
+    });
+
+
+
 });

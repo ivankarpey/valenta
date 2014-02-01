@@ -1,6 +1,7 @@
-﻿var JsUtilHelper = require("./../infrastructure/jsUtilHelper");
-var Router = require("./routing");
+﻿var JsUtilHelper = require('./../infrastructure/jsUtilHelper');
+var Router = require('./routing');
 var Logger = require('./../infrastructure/logger');
+var http = require('http')
 
 var Application = function(configPath){
 
@@ -21,6 +22,7 @@ Application.prototype = {
             "serverPort": 5000
         };
         this.router = new Router();
+        this.server = http.createServer(this.handleRequest);
     },
 
     initWithConfig: function(path){
@@ -49,7 +51,11 @@ Application.prototype = {
         
         var uriData = self.router.parseURI(req.path);
         var controller = self.initiateController(uriData);
-        
+
+    },
+
+    run: function(){
+        this.server.listen(this.settings.serverPort);
     }
 
 };

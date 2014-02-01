@@ -6,10 +6,7 @@ var JSUtilHelper = function(){
 
 };
 
-
 JSUtilHelper.__proto__ = lodash;
-
-
 
 JSUtilHelper.isNullOrUndefined = function(value){
     return value === null || typeof value === "undefined";

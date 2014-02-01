@@ -11,10 +11,11 @@ function Task(func, order, context, resolver){
 };
 
 Task.prototype.invoke = function(){
+    var result = null;
     try{
         var signature = this.resolver.readSignature(this.func);
         if(_.isEmpty(signature)){
-            this.func.call();
+            result = this.func.call();
         }else{
             var data = [];
             var self = this;
@@ -23,13 +24,15 @@ Task.prototype.invoke = function(){
                 data.push(self.resolver.resolve(elem));
             })
 
-            this.func.apply(null, data);
+            result = this.func.apply(null, data);
         }
     }
     catch(e){
         //TODO:Implement error handling logic according framework policies
         console.log(e);
     }
+
+    this.context.res.executionFlowResult.push(result);
 
 };
 
@@ -39,7 +42,7 @@ function FilterTask(func, order, context, resolver){
 
 _.inherit(FilterTask, Task);
 
-function ControllerTask(func, order, context, resolver){
+function ControllerTask(func, order, context, resolver, method){
 
 }
 
@@ -51,21 +54,42 @@ function AttributeTask(func, order, context, resolver){
 
 _.inherit(AttributeTask, Task);
 
-function ExecutionFlow(dependencyResolver){
+function ExecutionFlow(dependencyResolver, context){
     
     if(!dependencyResolver){
-        throw new Error("Injector is required.")
+        throw new Error("Injector is required.");
+    }
+
+    if(!context){
+        context = {req: {}, res:{}}
     }
     
     this.resolver = dependencyResolver;
     this.tasks = [];
     this.size = 0;
-    this.executionContext = {};
-    
+    this.executionContext = context;
+    this.executionContext.res.executionFlowResult = [];
 };
 
-ExecutionFlow.buildControllerFlow = function(flow, controllerMetadata){
-        
+ExecutionFlow.buildControllerFlow = function(resolver, filters, controllerMetadata, request, response, action){
+    var flow = new ExecutionFlow(resolver, {req: request, res: response});
+
+    function addToFlow(collection){
+        if(collection && _.isArray(collection)){
+            _.forEach(collection, function(elem){
+                flow.append(elem);
+            });
+        }
+    }
+
+    addToFlow(filters);
+    addToFlow(controllerMetadata.attr);
+
+    var actionMetadata = controllerMetadata.actionsData[action];
+    addToFlow(actionMetadata.attr);
+
+    flow.append(actionMetadata.func);
+    return flow;
 };
 
 ExecutionFlow.prototype = {

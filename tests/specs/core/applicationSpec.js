@@ -17,5 +17,14 @@ describe("Base application tests", function(){
         expect(app).toBeDefined();
         expect(app).not.toBeNull();
 
+    });
+
+    it("application should successfully run and start listen defined port", function(){
+
+        var app = new Application();
+        spyOn(app.server, 'listen');
+        app.run();
+
+        expect(app.server.listen).toHaveBeenCalledWith(app.settings.serverPort);
     })
 });
