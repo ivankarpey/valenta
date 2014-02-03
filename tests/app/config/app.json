@@ -1,5 +1,7 @@
 {
     "routePattern": "/controller/action/id",
+    "defaultRoute": "/home/index",
     "serverPort": 500,
-    "controllerFolderPath": "./../../tests/app/controllers/"
+    "controllerFolderPath": "./../../tests/app/controllers/",
+    "staticContent": "/public"
 }

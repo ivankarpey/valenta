@@ -14,9 +14,15 @@ var RouterParam = function(param){
     this.id = this.data['id'];
 };
 
-var Router = function(pattern, defaults) {
-    this.setRoutePattern(pattern);
-    this.setDefaultValues(defaults)
+var Router = function(settings) {
+
+    if(!settings){
+        throw new Error("Routing settings should be provided");
+    }
+
+    this.settings = settings;
+    this.setRoutePattern(this.settings['routePattern']);
+    this.setDefaultValues(this.settings['defaultRoute']);
 };
 
 Router.prototype = {
@@ -47,7 +53,17 @@ Router.prototype = {
         }
 
         return new RouterParam(data);
+    },
+
+    isStaticFileRoute: function(url){
+
+        if(!this.settings.staticContent){
+            throw new Error("static file route pattern should be provided");
+        }
+        return url.indexOf(this.settings.staticContent) == 0;
+
     }
+
 };
 
 module.exports = Router;

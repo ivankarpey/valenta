@@ -1,8 +1,29 @@
 ﻿var Router = require('./../../../src/core/routing');
 
-var router = new Router();
+describe("router initializtion", function(){
+
+    it("should successfully initialize with settings provided", function(){
+
+        var router = new Router({routePattern: null, defaultRoute: "/home/index"});
+
+        expect(router).toBeTruthy();
+        expect(router.settings).toBeTruthy();
+        expect(router.settings['routePattern']).toBeNull();
+        expect(router.settings['defaultRoute']).toBeTruthy();
+
+    });
+
+    it("should throw error if no settings provided", function(){
+
+        expect(function(){ return new Router();}).toThrow();
+
+    });
+
+});
 
 describe("Checking routing", function(){
+
+    var router = new Router({staticContent: "/public"});
 
     it("should successfully parse URI", function() {
 
@@ -35,6 +56,26 @@ describe("Checking routing", function(){
         expect(routingParams.action).toEqual("index");
         expect(routingParams.id).toBeNull();
         expect(routingParams.queryString).toEqual([]);
+
+    });
+
+    it("should throw error if no static file pattern", function(){
+
+        expect(function(){
+            (new Router({})).isStaticFileRoute("/home/index")
+        }).toThrow();
+
+    });
+
+    it("should say that route goes to static file", function(){
+
+        expect(router.isStaticFileRoute("/public/style.css")).toBeTruthy();
+
+    });
+
+    it("should say that route goes to controller/action", function(){
+
+        expect(router.isStaticFileRoute("/home/index")).toBeFalsy();
 
     });
 

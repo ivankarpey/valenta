@@ -5,6 +5,7 @@ var ExecutionFlow = require("./executionFlow");
 var DependencyResolver = require("../infrastructure/dependencyResolver");
 var Logger = require('./../infrastructure/logger');
 var http = require('http');
+var FileServer = require('node-static').Server;
 
 var Application = function(configPath){
 
@@ -17,6 +18,7 @@ var Application = function(configPath){
     }
 
     this.server = http.createServer(this.handleRequest);
+    this.fileServer = new FileServer('.' + this.settings['staticContent']);
     this.controllerFactory = new ControllerFactory(this.settings);
     this.dependencyResolver = new DependencyResolver();
     this._initFilters();
@@ -24,12 +26,13 @@ var Application = function(configPath){
 
 Application.prototype = {
 
-    initDefault: function(settings){
+    initDefault: function(){
 
         this.settings = {
-            "serverPort": 5000
+            "serverPort": 5000,
+            "staticContent": "/public"
         };
-        this.router = new Router();
+        this.router = new Router(this.settings);
         this.server = http.createServer(this.handleRequest);
 
     },
@@ -42,7 +45,7 @@ Application.prototype = {
 
             var data =  fs.readFileSync(path).toString();
             this.settings = JSON.parse(data);
-            this.router = new Router(this.settings['routePattern']);
+            this.router = new Router(this.settings);
 
         }catch(err) {
 
@@ -54,11 +57,18 @@ Application.prototype = {
     },
 
     handleRequest: function(request, response){
-        
-        var uriData = this.router.parseURI(request);
-        var controllerMetadata = this.controllerFactory.getControllerMetadata(uriData.controller);
 
-        ExecutionFlow.buildControllerFlow(
+
+        if(request.url.indexOf(this.settings.staticContent) == 0){
+
+            this.fileServer.serve(request, response);
+
+        }else{
+
+            var uriData = this.router.parseURI(request);
+            var controllerMetadata = this.controllerFactory.getControllerMetadata(uriData.controller);
+
+            ExecutionFlow.buildControllerFlow(
                 this.dependencyResolver,
                 this.filters,
                 controllerMetadata,
@@ -66,7 +76,9 @@ Application.prototype = {
                 response,
                 uriData.action).execute();
 
-        this._sendResponse(response);
+            this._sendResponse(response);
+
+        }
 
     },
 

@@ -34,5 +34,4 @@ _.splitClear = function(elem, separator){
 
 };
 
-
 module.exports = _;

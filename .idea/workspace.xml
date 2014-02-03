@@ -23,46 +23,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="28" selection-start="634" selection-end="634" vertical-scroll-proportion="-2.0141845" vertical-offset="1175" max-vertical-offset="1598">
+            <state line="47" column="50" selection-start="1404" selection-end="1404" vertical-scroll-proportion="0.0" vertical-offset="542" max-vertical-offset="1802">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="applicationSpec.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/specs/core/applicationSpec.js">
+      <file leaf-file-name="node-static.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/node-static/lib/node-static.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="0" selection-start="1050" selection-end="1050" vertical-scroll-proportion="0.0" vertical-offset="529" max-vertical-offset="986">
+            <state line="46" column="0" selection-start="1343" selection-end="1343" vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="5661">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="codeLoader.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/infrastructure/codeLoader.js">
+      <file leaf-file-name="jasmine-1.3.1.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/jasmine-node/lib/jasmine-node/jasmine-1.3.1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="724" selection-end="724" vertical-scroll-proportion="0.0" vertical-offset="349" max-vertical-offset="765">
+            <state line="480" column="0" selection-start="12382" selection-end="12382" vertical-scroll-proportion="0.0" vertical-offset="8026" max-vertical-offset="44302">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controllerFactorySpec.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/specs/core/controllerFactorySpec.js">
+      <file leaf-file-name="routing.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/routing.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="54" selection-start="1940" selection-end="1940" vertical-scroll-proportion="0.0" vertical-offset="542" max-vertical-offset="952">
+            <state line="30" column="6" selection-start="994" selection-end="994" vertical-scroll-proportion="0.0" vertical-offset="151" max-vertical-offset="1377">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="logger.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/infrastructure/logger.js">
+      <file leaf-file-name="jsUtilHelper.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/infrastructure/jsUtilHelper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="476">
+            <state line="35" column="0" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0" vertical-offset="298" max-vertical-offset="714">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routerSpec.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/specs/core/routerSpec.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="62" column="0" selection-start="2011" selection-end="2011" vertical-scroll-proportion="0.0" vertical-offset="835" max-vertical-offset="1496">
               <folding />
             </state>
           </provider>
@@ -77,10 +86,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routing.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/routing.js">
+      <file leaf-file-name="app.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/app/config/app.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="54" selection-start="936" selection-end="936" vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="1105">
+            <state line="2" column="5" selection-start="52" selection-end="64" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="204">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="todo.txt" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DOCS/todo.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="11" selection-end="11" vertical-scroll-proportion="0.0425" vertical-offset="0" max-vertical-offset="400">
               <folding />
             </state>
           </provider>
@@ -90,24 +108,6 @@
         <entry file="file://$PROJECT_DIR$/tests/app/controllers/homeController.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="9" column="21" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/app/config/app.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="59" selection-start="129" selection-end="129" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="170">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="todo.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DOCS/todo.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="54" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
               <folding />
             </state>
           </provider>
@@ -138,19 +138,19 @@
         <option value="$PROJECT_DIR$/tests/specs/interaction/testAppSpec.js" />
         <option value="$PROJECT_DIR$/DOCS/forTests.js" />
         <option value="$PROJECT_DIR$/src/infrastructure/dependencyResolver.js" />
-        <option value="$PROJECT_DIR$/src/infrastructure/jsUtilHelper.js" />
         <option value="$PROJECT_DIR$/src/infrastructure/codeLoader.js" />
         <option value="$PROJECT_DIR$/tests/specs/infrastructure/codeLoaderSpec.js" />
-        <option value="$PROJECT_DIR$/tests/app/config/app.json" />
         <option value="$PROJECT_DIR$/tests/app/controllers/homeController.js" />
-        <option value="$PROJECT_DIR$/src/core/routing.js" />
         <option value="$PROJECT_DIR$/src/core/constants.js" />
-        <option value="$PROJECT_DIR$/tests/specs/core/routerSpec.js" />
         <option value="$PROJECT_DIR$/src/core/controllerFactory.js" />
         <option value="$PROJECT_DIR$/tests/specs/core/controllerFactorySpec.js" />
-        <option value="$PROJECT_DIR$/DOCS/todo.txt" />
+        <option value="$PROJECT_DIR$/src/infrastructure/jsUtilHelper.js" />
+        <option value="$PROJECT_DIR$/tests/app/config/app.json" />
         <option value="$PROJECT_DIR$/tests/specs/core/applicationSpec.js" />
         <option value="$PROJECT_DIR$/src/core/application.js" />
+        <option value="$PROJECT_DIR$/src/core/routing.js" />
+        <option value="$PROJECT_DIR$/tests/specs/core/routerSpec.js" />
+        <option value="$PROJECT_DIR$/DOCS/todo.txt" />
       </list>
     </option>
   </component>
@@ -339,10 +339,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="infrastructure" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -557,14 +553,14 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36864406" sideWeight="0.49964714" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36864406" sideWeight="0.49964714" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871014" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21839081" sideWeight="0.55755895" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3460452" sideWeight="0.6030062" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5480226" sideWeight="0.39699382" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3361582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38700566" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -616,40 +612,15 @@
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/tests/specs/core/applicationSpec.js</url>
-          <line>42</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/core/executionFlow.js</url>
-          <line>84</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/infrastructure/codeLoader.js</url>
-          <line>27</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/core/controllerFactory.js</url>
-          <line>28</line>
-          <option name="timeStamp" value="38" />
+          <url>file://$PROJECT_DIR$/tests/specs/core/routerSpec.js</url>
+          <line>77</line>
+          <option name="timeStamp" value="41" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="39" />
+      <option name="time" value="42" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/app/controllers/testController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/specs/infrastructure/dependencyResolverSpec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="69" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2125" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/specs/core/applicationSpec.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="17" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="459" />
@@ -755,11 +726,6 @@
         <state line="442" column="9" selection-start="11954" selection-end="11954" vertical-scroll-proportion="3.4929578" vertical-offset="5951" max-vertical-offset="11356" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/jasmine-node/lib/jasmine-node/jasmine-1.3.1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1065" column="0" selection-start="28163" selection-end="28163" vertical-scroll-proportion="0.0" vertical-offset="18019" max-vertical-offset="44302" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libs/lodash/dist/lodash.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3037" column="0" selection-start="101208" selection-end="101208" vertical-scroll-proportion="0.0" vertical-offset="50081" max-vertical-offset="108086" />
@@ -799,13 +765,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/infrastructure/jsUtilHelper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="2" selection-start="763" selection-end="763" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="731">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/jasmine-node/lib/jasmine-node/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="152" column="0" selection-start="4973" selection-end="4973" vertical-scroll-proportion="0.0" vertical-offset="2493" max-vertical-offset="3349">
@@ -841,30 +800,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/app/config/app.json">
+    <entry file="file://$PROJECT_DIR$/src/infrastructure/logger.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="59" selection-start="129" selection-end="129" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="170">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/app/controllers/homeController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="21" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/routing.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="54" selection-start="936" selection-end="936" vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="1105">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="37" selection-start="100" selection-end="100" vertical-scroll-proportion="0.08037825" vertical-offset="0" max-vertical-offset="423">
+        <state line="14" column="0" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="476">
           <folding />
         </state>
       </provider>
@@ -876,65 +814,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/infrastructure/logger.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/node-static/lib/node-static.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="476">
+        <state line="46" column="0" selection-start="1343" selection-end="1343" vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="5661">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/infrastructure/codeLoader.js">
+    <entry file="file://$PROJECT_DIR$/src/infrastructure/jsUtilHelper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="724" selection-end="724" vertical-scroll-proportion="0.0" vertical-offset="349" max-vertical-offset="765">
+        <state line="35" column="0" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0" vertical-offset="298" max-vertical-offset="714">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/controllerFactory.js">
+    <entry file="file://$PROJECT_DIR$/src/core/constants.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="55" selection-start="1376" selection-end="1376" vertical-scroll-proportion="0.0" vertical-offset="1141" max-vertical-offset="1717">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/specs/core/routerSpec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="51" selection-start="879" selection-end="879" vertical-scroll-proportion="0.0" vertical-offset="138" max-vertical-offset="799">
+        <state line="2" column="37" selection-start="100" selection-end="100" vertical-scroll-proportion="0.08173077" vertical-offset="0" max-vertical-offset="416">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/specs/core/controllerFactorySpec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="54" selection-start="1940" selection-end="1940" vertical-scroll-proportion="0.0" vertical-offset="542" max-vertical-offset="952">
+        <state line="46" column="54" selection-start="1940" selection-end="1940" vertical-scroll-proportion="0.5955335" vertical-offset="542" max-vertical-offset="952">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DOCS/todo.txt">
+    <entry file="file://$PROJECT_DIR$/tests/app/config/app.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="54" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+        <state line="2" column="5" selection-start="52" selection-end="64" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="204">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/executionFlow.js">
+    <entry file="file://$PROJECT_DIR$/tests/app/controllers/homeController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="0" selection-start="1949" selection-end="1949" vertical-scroll-proportion="0.32624114" vertical-offset="1290" max-vertical-offset="2278">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/specs/core/applicationSpec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="1050" selection-end="1050" vertical-scroll-proportion="0.0" vertical-offset="529" max-vertical-offset="986">
+        <state line="9" column="21" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="28" selection-start="634" selection-end="634" vertical-scroll-proportion="-2.0141845" vertical-offset="1175" max-vertical-offset="1598">
+        <state line="47" column="50" selection-start="1404" selection-end="1404" vertical-scroll-proportion="0.0" vertical-offset="542" max-vertical-offset="1802">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/jasmine/spec/core/CustomMatchersSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="10" selection-start="1906" selection-end="1906" vertical-scroll-proportion="0.3315508" vertical-offset="777" max-vertical-offset="1734">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/specs/core/applicationSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="0" selection-start="968" selection-end="968" vertical-scroll-proportion="0.0" vertical-offset="457" max-vertical-offset="1173">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/controllerFactory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="808" selection-end="808" vertical-scroll-proportion="0.33173078" vertical-offset="338" max-vertical-offset="1717">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/executionFlow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="0" selection-start="1949" selection-end="1949" vertical-scroll-proportion="0.33173078" vertical-offset="1290" max-vertical-offset="2278">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/infrastructure/codeLoader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="664" selection-end="664" vertical-scroll-proportion="0.45432693" vertical-offset="270" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/jasmine-node/lib/jasmine-node/jasmine-1.3.1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="480" column="0" selection-start="12382" selection-end="12382" vertical-scroll-proportion="0.0" vertical-offset="8026" max-vertical-offset="44302">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/routing.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="6" selection-start="994" selection-end="994" vertical-scroll-proportion="0.0" vertical-offset="151" max-vertical-offset="1377">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/specs/core/routerSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="0" selection-start="2011" selection-end="2011" vertical-scroll-proportion="0.0" vertical-offset="835" max-vertical-offset="1496">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DOCS/todo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="11" selection-end="11" vertical-scroll-proportion="0.0425" vertical-offset="0" max-vertical-offset="400">
           <folding />
         </state>
       </provider>

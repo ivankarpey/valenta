@@ -30,6 +30,17 @@ describe("Base application tests", function(){
 
     describe("application request handling", function(){
 
+        it("should handle static file requests", function(){
+
+            var request = {url:"/public/style.css"};
+            var app = new Application();
+            spyOn(app.fileServer, 'serve');
+
+            app.handleRequest(request, {});
+            expect(app.fileServer.serve).toHaveBeenCalledWith(request, {});
+
+        });
+
         it("should succesfully handle empty route call", function(){
 
             fake = function(){};
