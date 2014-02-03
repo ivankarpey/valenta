@@ -20,11 +20,18 @@ function CodeLoader(settings){
 CodeLoader.prototype = {
     loadController: function(name){
 
-        var controllerFullPath = this.settings["controllerFolderPath"] + name;
+        var controllerPostfix = "Controller";
+        var controllerFullPath = this.settings["controllerFolderPath"] + name + controllerPostfix;
+
         addFunctionExtensions();
-        var result = require(controllerFullPath);
+        var result = this._loadCodeFromSource(controllerFullPath);
         removeFunctionExtensions();
+
         return result;
+    },
+
+    _loadCodeFromSource: function(path){
+        return require(path);
     }
 };
 

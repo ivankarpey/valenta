@@ -57,9 +57,16 @@ Application.prototype = {
         
         var uriData = this.router.parseURI(request);
         var controllerMetadata = this.controllerFactory.getControllerMetadata(uriData.controller);
-        ExecutionFlow.buildControllerFlow(this.dependencyResolver, this.filters,
-            controllerMetadata,request, response, uriData.action).execute();
-        this._sendResponse();
+
+        ExecutionFlow.buildControllerFlow(
+                this.dependencyResolver,
+                this.filters,
+                controllerMetadata,
+                request,
+                response,
+                uriData.action).execute();
+
+        this._sendResponse(response);
 
     },
 
@@ -73,7 +80,7 @@ Application.prototype = {
 
     _sendResponse: function(response){
         response.writeHead(200, {"Content-Type": "text/plain"});
-        response.end(response.result);
+        response.end(response.executionFlowResult);
     }
 
 };

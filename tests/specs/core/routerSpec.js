@@ -22,8 +22,20 @@ describe("Checking routing", function(){
         var routingParams = router.parseURI({ url: testUrl });
         expect(routingParams).not.toBeNull();
         expect(routingParams.controller).toEqual("home");
-        expect(routingParams.action).toBeNull();
+        expect(routingParams.action).toEqual("index");
         expect(routingParams.id).toBeNull();
 
-    })
+    });
+
+    it("should successfully parse URI without querystring", function(){
+
+        var routingParams = router.parseURI({ url: "/home/index" });
+        expect(routingParams).not.toBeNull();
+        expect(routingParams.controller).toEqual("home");
+        expect(routingParams.action).toEqual("index");
+        expect(routingParams.id).toBeNull();
+        expect(routingParams.queryString).toEqual([]);
+
+    });
+
 });

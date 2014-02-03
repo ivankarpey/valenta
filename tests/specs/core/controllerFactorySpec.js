@@ -1,7 +1,7 @@
 var ControllerFactory = require('./../../../src/core/controllerFactory');
 
 describe("ControllerFactory", function(){
-    var ctrlName = "testController", factory;
+    var ctrlName = "test", factory;
 
     beforeEach(function(){ factory = new ControllerFactory({controllerFolderPath: "./../../tests/app/controllers/"}); });
 
@@ -40,10 +40,11 @@ describe("ControllerFactory", function(){
             expect(meta.attr).toBeTruthy();
         });
 
-        it("should provide correct actions metadata", function(){
+        it("should provide correct actions metadata and have metadata for index method", function(){
             var meta = factory.getControllerMetadata(ctrlName);
             var actionsData = meta.actionsData;
             expect(actionsData).toBeTruthy();
+            expect(actionsData["index"]).toBeTruthy();
         });
 
     });

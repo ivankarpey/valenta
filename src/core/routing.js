@@ -26,7 +26,7 @@ Router.prototype = {
 
     setDefaultValues: function(defaults){
         var value = defaults || Constants.DEFAULT_ROUTE_VALUE;
-         this._default = this.parseURI({url: value});
+        this._default = this.parseURI({url: value});
     },
 
     parseURI: function (request) {

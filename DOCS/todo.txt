@@ -1,14 +1,17 @@
 important:
+
 1) make simple GET request handled succesfully
 2) allow easily handle static content in predefined sources
+3) redesign execution workflow to work in async manner
 
 
 intermediate:
 1) think about request/response objects structure
+
 
 minor:
 1) make special class for settings and make it readonly
 
 
 lowest possible:
-1) write unittests for utils methods
+1) write unit tests for utils methods

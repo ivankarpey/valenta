@@ -37,7 +37,7 @@ var ControllerMetadata = (function(){
             var proto = this.controller.prototype;
             for(var method in proto){
                 if(proto.hasOwnProperty(method)){
-                    this.actionsData[method.name] = new ActionMetadata(method);
+                    this.actionsData[method] = new ActionMetadata(proto[method]);
                 }
             }
         },

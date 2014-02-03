@@ -32,11 +32,19 @@ describe("Base application tests", function(){
 
         it("should succesfully handle empty route call", function(){
 
-            var request = {url:"/"};
-            var response = {};
+            fake = function(){};
 
-            var app = new Application();
+            var request = {url:"/"};
+            var response = {writeHead:fake, end: fake};
+
+            spyOn(response, "writeHead");
+            spyOn(response, "end");
+
+            var app = new Application("./tests/app/config/app.json");
             app.handleRequest(request, response);
+
+            expect(response.writeHead).toHaveBeenCalled();
+            expect(response.end).toHaveBeenCalledWith(response.executionFlowResult);
 
         })
 
