@@ -1,16 +1,16 @@
 {
-  "name": "centaurea",
-  "version": "0.0.1",
-  "description": "centaurea\r =========",
+  "name": "valenta",
+  "version": "0.0.2",
+  "description": "valenta\r =========",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/ivankarpey/centaurea.git"
+    "url": "git://github.com/ivankarpey/valenta.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ivankarpey/centaurea/issues"
+    "url": "https://github.com/ivankarpey/valenta/issues"
   },
   "devDependencies": {
     "jasmine-node": "~1.11.0",
@@ -18,6 +18,10 @@
     "grunt-jasmine-node": "~0.1.0"
   },
   "dependencies": {
-    "node-static": "~0.7.3"
+    "node-static": "~0.7.3",
+    "bower": ""
+  },
+  "scripts": {
+    "postinstall" : "node_modules/.bin/bower install"
   }
 }
